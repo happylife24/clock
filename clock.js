@@ -7,5 +7,5 @@ changeBackgroundColor();
 
 // 배경사진 사이즈
 const image = document.getElementById("newImage");
-image.style.width = "500px";
-image.style.height = "500px";
+image.style.width = "200px";
+image.style.height = "200px";
