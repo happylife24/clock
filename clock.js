@@ -5,7 +5,10 @@ function changeBackgroundColor() {
 changeBackgroundColor();
 
 
+var image = document.getElementById("newImage");
 
-const image = document.getElementById("newImage");
-image.style.width = "500px";
-image.style.height = "500px";
+var newWidth = 200;
+var newHeight = 300;
+
+image.width = newWidth;
+image.height = newHeight; 
