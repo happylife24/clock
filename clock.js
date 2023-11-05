@@ -20,7 +20,7 @@ var image = document.getElementById("myImage");
 var currentPosition = 0; //현재위치
 //오른쪽으로 이동 함수
 function moveImageRight() {
-    currentPosition += 10; //이동거리조절
+    currentPosition += 50; //이동거리조절
     image.style.left = currentPosition + px;
 }
 //호출시 1초마다 오른쪽 이동
