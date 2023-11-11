@@ -15,9 +15,13 @@ function resizeImage() {
 window.onload = resizeImage;
 
 
-//이미지 위치 변경
+//이미지 왼쪽 변경
 var myFunction =
-    document.getElementById("myImage").style.left = "200px";
+    document.getElementById("myImage").style.left = "225px";
+    document.getElementById("myImage").style.top = "60px";
+
+
+    
 
 
 
