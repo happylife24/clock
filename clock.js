@@ -16,13 +16,9 @@ window.onload = resizeImage;
 
 
 //이미지 위치 변경
-    var currentPosition = 0;
-    var image = document.getElementById("myImage");
+var myFunction =
+    document.getElementById("myImage").style.left = "200px";
 
-    function moveImageRight() {
-        currentPosition += 50;
-        image.style.left = currentPosition + 'px';
-    }
 
 
 
