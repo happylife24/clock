@@ -11,11 +11,11 @@ function resizeImage() {
     image.width = 600;
     image.height = 400;
 }
-//call image after modified
+//call modified image 
 window.onload = resizeImage;
 
 
-//move image
+//style image
 var myFunction =
     document.getElementById("myImage").style.left = "225px";
     document.getElementById("myImage").style.top = "60px";
