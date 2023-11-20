@@ -30,7 +30,7 @@ function beginTime() {
     let s = now.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+    document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
     setTimeout(beginTime, 1000);
 }
 function checkTime(i) {
