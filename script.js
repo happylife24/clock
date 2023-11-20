@@ -17,8 +17,8 @@ window.onload = resizeImage;
 
 //style image
 var myFunction =
-    document.getElementById("myImage").style.left = "225px";
-    document.getElementById("myImage").style.top = "60px";
+    document.getElementById("myImage").style.left = "310px";
+    document.getElementById("myImage").style.top = "90px";
     document.getElementById("myImage").style.borderRadius = "50px";
 
 
