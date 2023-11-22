@@ -5,25 +5,8 @@ function changeBackgroundColor() {
 changeBackgroundColor();
 
 
-//resize image
-function resizeImage() {
-    var image = document.getElementById("myImage");
-    image.width = 900;
-    image.height = 600;
-}
-//call modified image 
-window.onload = resizeImage;
-
-
-//style image
-var myFunction =
-    document.getElementById("myImage").style.left = "170px";
-    document.getElementById("myImage").style.top = "15px";
-    document.getElementById("myImage").style.borderRadius = "50px";
-
-
 //time
-function beginTime() {
+function startTime() {
     const now = new Date();
     let h = now.getHours();
     let m = now.getMinutes();
@@ -31,12 +14,21 @@ function beginTime() {
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
-    setTimeout(beginTime, 1000);
+    setTimeout(startTime, 1000);
 }
+
 function checkTime(i) {
     if (i < 10) {i = "0" + i};
     return i;
 }
+
+
+//time move right
+    document.getElementById("txt").style.right = "700px";
+    document.getElementById("txt").style.top = "300px";
+    document.getElementById("txt").style.backgroundImage = 'url("clock.jpg")';
+
+    
 
 
 
