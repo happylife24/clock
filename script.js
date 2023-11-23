@@ -24,18 +24,21 @@ function checkTime(i) {
 
 
 //time move right
-    document.getElementById("txtImg").style.right = "100px";
+function moveTime() {
+    document.getElementById("txtImg").style.right = "500px";
     document.getElementById("txtImg").style.top = "100px";
+}
+moveTime();
 
 
 //backImg of time
-    document.getElementById("txtImg").style.backgroundImage = "url('clock.jpg')";
+function backImg() {
+    var backgroundColor = "pink";
+    
+}
+backImg();
+    
 
-
-//resize backImg
-var txtImgElement = document.getElementById("txtImg");
-
-txtImgElement.style.backgroundSize = "200%";
     
 
 
