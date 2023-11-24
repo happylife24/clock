@@ -13,7 +13,7 @@ function startTime() {
     let s = now.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    document.getElementById("txtImg").innerHTML = h + ":" + m + ":" + s;
+    document.getElementById("txtClock").innerHTML = h + ":" + m + ":" + s;
     setTimeout(startTime, 1000);
 }
 
@@ -25,19 +25,23 @@ function checkTime(i) {
 
 //clock moves right
 function moveTime() {
-    document.getElementById("txtImg").style.right = "500px";
-    document.getElementById("txtImg").style.top = "100px";
+    document.getElementById("txtClock").style.right = "500px";
+    document.getElementById("txtClock").style.top = "300px";
 }
 moveTime();
 
 
-//clock backImg
-function backImg() {
-    var image = document.getElementById("myImage");
-    image.width = 500;
-    image.height = 300;    
+//clock-img  &  img-position
+function clockImg() {
+    document.getElementById("txtClock").style.backgroundImage = "url('clock.jpg')";
+    document.getElementById("myImage").style.width = "700px";
+    document.getElementById("myImage").style.right = "500px";
 }
-backImg();
+clockImg();
+
+
+
+
 
 
 
