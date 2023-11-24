@@ -23,7 +23,7 @@ function checkTime(i) {
 }
 
 
-//time move right
+//clock moves right
 function moveTime() {
     document.getElementById("txtImg").style.right = "500px";
     document.getElementById("txtImg").style.top = "100px";
@@ -31,12 +31,16 @@ function moveTime() {
 moveTime();
 
 
-//backImg of time
+//clock backImg
 function backImg() {
-    var backgroundColor = "pink";
-    
+    var image = document.getElementById("myImage");
+    image.width = 500;
+    image.height = 300;    
 }
 backImg();
+
+
+
     
 
     
