@@ -28,7 +28,7 @@ function checkTime(i) {
     document.getElementById("txtClock").style.right = "250px";
     document.getElementById("txtClock").style.top = "30px";
     document.getElementById("txtClock").style.borderRadius = "200px";
-    document.getElementById("txtClock").style.border = "80px double yellow";
+    document.getElementById("txtClock").style.border = "80px triple yellow";
     document.getElementById("txtClock").style.fontSize = "100px";
     document.getElementById("txtClock").style.color = "white";
     document.getElementById("txtClock").style.display = "flex";
