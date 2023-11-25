@@ -10,7 +10,7 @@ function showTxtClock() {
     var showDate = new Date();
 
     var formattedTime = showDate.toLocaleTimeString([], {hour: '2-digit',
-    minute:'2-digit', hour12: true});
+    minute:'2-digit', second: '2-digit', hour12: true});
 
     document.getElementById("txtClock").innerHTML = formattedTime;
 }  
