@@ -24,12 +24,13 @@ function checkTime(i) {
 
 
 //clock moves right
-    document.getElementById("txtClock").style.backgroundColor = "yellow";
+    document.getElementById("txtClock").style.backgroundColor = "black";
     document.getElementById("txtClock").style.right = "250px";
-    document.getElementById("txtClock").style.top = "25px";
+    document.getElementById("txtClock").style.top = "30px";
     document.getElementById("txtClock").style.borderRadius = "200px";
-    document.getElementById("txtClock").style.border = "80px double purple";
+    document.getElementById("txtClock").style.border = "80px double yellow";
     document.getElementById("txtClock").style.fontSize = "100px";
+    document.getElementById("txtClock").style.color = "white";
     document.getElementById("txtClock").style.display = "flex";
     document.getElementById("txtClock").style.justifycontent = "center";
     document.getElementById("txtClock").style.alignItems = "center";
