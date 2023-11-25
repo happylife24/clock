@@ -1,6 +1,6 @@
 //background color
 function changeBackgroundColor() {
-    document.body.style.backgroundColor = "#90EE90";
+    document.body.style.backgroundColor = "pink";
 } 
 changeBackgroundColor();
 
