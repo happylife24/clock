@@ -24,20 +24,13 @@ function checkTime(i) {
 
 
 //clock moves right
-function moveTime() {
-    document.getElementById("txtClock").style.right = "500px";
-    document.getElementById("txtClock").style.top = "300px";
-}
-moveTime();
-
+    document.getElementById("txtClock").style.backgroundColor = "yellow";
+    document.getElementById("txtClock").style.right = "280px";
+    document.getElementById("txtClock").style.top = "80px";
 
 //clock-img  &  img-position
-function clockImg() {
-    document.getElementById("txtClock").style.backgroundImage = "url('clock.jpg')";
-    document.getElementById("myImage").style.width = "700px";
-    document.getElementById("myImage").style.right = "500px";
-}
-clockImg();
+
+
 
 
 

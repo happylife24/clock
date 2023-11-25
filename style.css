@@ -1,8 +1,6 @@
-div {
+#txtClock {
     position: absolute;
-}
-
-#myImage{
-    border: 5px solid purple;
+    width: 700px;
+    height: 500px;
 }
 
