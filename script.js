@@ -25,9 +25,10 @@ function checkTime(i) {
 
 //clock moves right
     document.getElementById("txtClock").style.backgroundColor = "yellow";
-    document.getElementById("txtClock").style.right = "300px";
-    document.getElementById("txtClock").style.top = "80px";
-    document.getElementById("txtClock").style.borderRadius = "70px";
+    document.getElementById("txtClock").style.right = "250px";
+    document.getElementById("txtClock").style.top = "10px";
+    document.getElementById("txtClock").style.borderRadius = "200px";
+    document.getElementById("txtClock").style.border = "100px solid purple";
     document.getElementById("txtClock").style.display = "flex";
     document.getElementById("txtClock").style.justifycontent = "center";
     document.getElementById("txtClock").style.alignItems = "center";
