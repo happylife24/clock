@@ -23,7 +23,7 @@ function checkTime(i) {
 }
 
 
-//clock moves right
+//clock move & style
     document.getElementById("txtClock").style.backgroundColor = "black";
     document.getElementById("txtClock").style.right = "250px";
     document.getElementById("txtClock").style.top = "30px";
