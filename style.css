@@ -12,7 +12,14 @@
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
+    #txtClock {
+      width: auto;
+      height: auto;
+    }
+  }
+  
+@media only screen and (max-width: 200px) {
     #txtClock {
       width: auto;
       height: auto;
