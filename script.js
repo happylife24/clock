@@ -1,6 +1,6 @@
 //background color
 function changeBackgroundColor() {
-    document.body.style.backgroundColor = "pink";
+    document.body.style.backgroundColor = "black";
 } 
 changeBackgroundColor();
 
@@ -13,6 +13,8 @@ function showTxtClock() {
     minute:'2-digit', second: '2-digit', hour12: true});
 
     document.getElementById("txtClock").innerHTML = formattedTime;
+    
+    setTimeout(showTxtClock, 1000);
 }  
 window.onload = showTxtClock;
 
