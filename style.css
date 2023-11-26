@@ -3,3 +3,11 @@
     width: 1000px;
     height: 400px;
 }
+
+
+@media only screen and (max-width: 1000px) {
+  #txtClock {
+    width: auto;
+    height: auto;
+  }
+}
