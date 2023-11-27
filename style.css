@@ -5,24 +5,18 @@
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
   #txtClock {
     width: auto;
     height: auto;
-    padding-left: 50%;
   }
 }
 
-@media only screen and (max-width: 500px) {
-    #txtClock {
-      width: auto;
-      height: auto;
-    }
-  }
 
-@media only screen and (max-width: 200px) {
-    #txtClock {
-      width: auto;
-      height: auto;
-    }
+@media only screen and (min-width: 601px) {
+  #txtClock {
+    width: auto;
+    height: auto;
   }
+}
+
