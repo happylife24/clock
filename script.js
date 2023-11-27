@@ -23,13 +23,14 @@ window.onload = showTxtClock;
     document.getElementById("txtClock").style.backgroundColor = "black";
     document.getElementById("txtClock").style.right = "60px";
     document.getElementById("txtClock").style.top = "30px";
+    document.getElementById("txtClock").style.width = "1000px";
+    document.getElementById("txtClock").style.height = "400px";
     document.getElementById("txtClock").style.borderRadius = "200px";
     document.getElementById("txtClock").style.border = "80px double yellow";
     document.getElementById("txtClock").style.fontSize = "100px";
     document.getElementById("txtClock").style.color = "white";
-    document.getElementById("txtClock").style.display = "flex";
-    document.getElementById("txtClock").style.justifycontent = "center";
-    document.getElementById("txtClock").style.alignItems = "center";
+    document.getElementById("txtColor").style. = "auto";
+    
 
 
 //
