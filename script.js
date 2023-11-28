@@ -29,7 +29,7 @@ window.onload = showTxtClock;
     document.getElementById("txtClock").style.border = "80px double yellow";
     document.getElementById("txtClock").style.fontSize = "100px";
     document.getElementById("txtClock").style.color = "white";
-    document.getElementById("txtColor").style. = "auto";
+   
     
 
 
