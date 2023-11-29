@@ -3,6 +3,7 @@
 }
 
 
+/*  Android mobile  */
 @media only screen and (max-width: 600px) {
     #txtClock {
         width: auto;
@@ -11,6 +12,7 @@
 }
 
 
+/*  Iphone mobile  */
 @media only screen and (max-width: 414px) {
     #txtClock {
         width: auto;
