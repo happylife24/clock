@@ -26,23 +26,25 @@ window.onload = showTxtClock;
 
 //move & style time
 function styleClock() {
-    document.getElementById("txtClock").style.backgroundColor = "black";
-    document.getElementById("txtClock").style.right = "100px";
-    document.getElementById("txtClock").style.top = "30px";
-    document.getElementById("txtClock").style.width = "1000px";
-    document.getElementById("txtClock").style.height = "300px";
-    document.getElementById("txtClock").style.borderRadius = "200px";
-    document.getElementById("txtClock").style.border = "40px double yellow";
-    document.getElementById("txtClock").style.fontSize = "100px";
-    document.getElementById("txtClock").style.color = "white";
+    var txtClock = document.getElementById("txtClock");
+    txtClock.style.backgroundColor = "black";
+    txtClock.style.right = "5%";
+    txtClock.style.top = "5%";
+    txtClock.style.width = "90%";
+    txtClock.style.height = "30%";
+    txtClock.style.borderRadius = "20px";
+    txtClock.style.border = "10px double yellow";
+    txtClock.style.fontSize = "5vw";
+    txtClock.style.color = "white";
 }
 styleClock();
     
 
 //move & style only text
 var txtClock = document.getElementById("txtClock");
-    txtClock.style.paddingTop = "180px";
+    txtClock.style.paddingTop = "5%";
     txtClock.style.fontFamily = "cursive";
+
 
 
 
