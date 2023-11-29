@@ -28,22 +28,24 @@ window.onload = showTxtClock;
 function styleClock() {
     var txtClock = document.getElementById("txtClock");
     txtClock.style.backgroundColor = "black";
-    txtClock.style.right = "5%";
+    txtClock.style.right = "0";
+    txtClock.style.left = "0";
+    txtClock.style.margin = "0 auto";
     txtClock.style.top = "5%";
     txtClock.style.width = "90%";
     txtClock.style.height = "30%";
     txtClock.style.borderRadius = "20px";
     txtClock.style.border = "10px double yellow";
     txtClock.style.fontSize = "5vw";
+    txtClock.style.fontFamily = "cursive";
+    txtClock.style.textAlign = "center";
     txtClock.style.color = "white";
+    txtClock.style.paddingTop = "3%";
 }
 styleClock();
     
 
-//move & style only text
-var txtClock = document.getElementById("txtClock");
-    txtClock.style.paddingTop = "5%";
-    txtClock.style.fontFamily = "cursive";
+
 
 
 
