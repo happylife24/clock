@@ -24,18 +24,24 @@ window.onload = showTxtClock;
 
 
 //clock move & style
+function styleClock() {
     document.getElementById("txtClock").style.backgroundColor = "black";
-    document.getElementById("txtClock").style.right = "60px";
+    document.getElementById("txtClock").style.right = "100px";
     document.getElementById("txtClock").style.top = "30px";
     document.getElementById("txtClock").style.width = "1000px";
-    document.getElementById("txtClock").style.height = "400px";
+    document.getElementById("txtClock").style.height = "300px";
     document.getElementById("txtClock").style.borderRadius = "200px";
-    document.getElementById("txtClock").style.border = "80px double yellow";
+    document.getElementById("txtClock").style.border = "40px double yellow";
     document.getElementById("txtClock").style.fontSize = "100px";
     document.getElementById("txtClock").style.color = "white";
-    document.getElementById("txtClock").style.textAlign = "center";
-   
+}
+styleClock();
     
+
+//move only text
+var txtClock = document.getElementById("txtClock");
+txtClock.style.paddingTop = "180px";
+
 
 
 
