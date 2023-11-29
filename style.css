@@ -2,6 +2,14 @@
     position: absolute;
 }
 
+@media only screen and (max-width: 600px) {
+    #txtClock {
+        width: auto;
+        height: auto;
+    }
+}
+
+
 @media only screen and (max-width: 414px) {
     #txtClock {
         width: auto;
