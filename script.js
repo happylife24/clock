@@ -13,17 +13,18 @@ function showTxtClock() {
         hour: '2-digit',
         minute:'2-digit',  
         second: '2-digit', 
-        hour12: true,
+        hour12: true
     });
 
     document.getElementById("txtClock").innerHTML = formattedTime;
-
+    
     setTimeout(showTxtClock, 1000);
+
 }  
 window.onload = showTxtClock;
 
 
-//clock move & style
+//move & style time
 function styleClock() {
     document.getElementById("txtClock").style.backgroundColor = "black";
     document.getElementById("txtClock").style.right = "100px";
@@ -38,9 +39,12 @@ function styleClock() {
 styleClock();
     
 
-//move only text
+//move & style only text
 var txtClock = document.getElementById("txtClock");
-txtClock.style.paddingTop = "180px";
+    txtClock.style.paddingTop = "180px";
+    txtClock.style.fontFamily = "cursive";
+
+
 
 
 
