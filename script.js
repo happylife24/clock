@@ -37,7 +37,7 @@ function styleClock() {
     txtClock.style.borderRadius = "20px";
     txtClock.style.border = "10px double yellow";
     txtClock.style.fontSize = "5vw";
-    txtClock.style.fontFamily = "cursive";
+    txtClock.style.fontFamily = "Arial, sans-serif";
     txtClock.style.textAlign = "center";
     txtClock.style.color = "white";
     txtClock.style.paddingTop = "3%";
