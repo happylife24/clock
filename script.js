@@ -27,7 +27,7 @@ window.onload = showTxtClock;
 //move & style time
 function styleClock() {
     var txtClock = document.getElementById("txtClock");
-    txtClock.style.backgroundColor = "black";
+    txtClock.style.backgroundImage= "linear-gradient(360deg, gray, black)";
     txtClock.style.right = "0";
     txtClock.style.left = "0";
     txtClock.style.margin = "0 auto";
