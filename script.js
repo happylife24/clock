@@ -5,9 +5,14 @@ function changeBackgroundColor() {
 changeBackgroundColor();
 
 
+
 //time
 function showTxtClock() {
     var showDate = new Date();
+
+    var daysOfWeek = ["Mon", "Tues", "Wednes", "Thurs", "Fri", "Sat", "Sun"];
+    var dayOfWeek = showDate.getDay();
+    var formattedDay = daysOfWeek[dayOfWeek];
 
     var formattedTime = showDate.toLocaleTimeString([], {
         hour: '2-digit',
@@ -16,12 +21,12 @@ function showTxtClock() {
         hour12: true
     });
 
-    document.getElementById("txtClock").innerHTML = formattedTime;
+    document.getElementById("txtClock").innerHTML = formattedTime + " " + formattedDay +"day";
     
     setTimeout(showTxtClock, 1000);
-
 }  
 window.onload = showTxtClock;
+
 
 
 //move & style time
@@ -33,7 +38,7 @@ function styleClock() {
     txtClock.style.margin = "0 auto";
     txtClock.style.top = "5%";
     txtClock.style.width = "90%";
-    txtClock.style.height = "30%";
+    txtClock.style.height = "60%";
     txtClock.style.borderRadius = "20px";
     txtClock.style.border = "10px double yellow";
     txtClock.style.fontSize = "10vw";
@@ -43,6 +48,10 @@ function styleClock() {
     txtClock.style.paddingTop = "3%";
 }
 styleClock();
+
+
+
+
     
 
 
