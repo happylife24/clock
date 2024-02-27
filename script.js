@@ -10,7 +10,7 @@ changeBackgroundColor();
 function showTxtClock() {
     var showDate = new Date();
 
-    var daysOfWeek = ["Mon", "Tues", "Wednes", "Thurs", "Fri", "Sat", "Sun"];
+    var daysOfWeek = ["Sun", "Mon", "Tues", "Wednes", "Thurs", "Fri", "Sat"];
     var dayOfWeek = showDate.getDay();
     var formattedDay = daysOfWeek[dayOfWeek];
 
