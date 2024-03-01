@@ -29,7 +29,7 @@ function showTxtClock() {
 window.onload = showTxtClock;
 
 
-
+.
 //move & style time
 function styleClock() {
     var txtClock = document.getElementById("txtClock");
