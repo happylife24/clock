@@ -21,10 +21,11 @@ function showTxtClock() {
         hour12: true
     });
 
-    document.getElementById("txtClock").innerHTML = formattedTime + " " + formattedDay +"day";
+    document.getElementById("txtClock").innerHTML = formattedTime + " " + formattedDay + "day ";
     
     setTimeout(showTxtClock, 1000);
 }  
+
 window.onload = showTxtClock;
 
 
