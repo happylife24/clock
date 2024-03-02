@@ -10,7 +10,7 @@ changeBackgroundColor();
 function showTxtClock() {
     var showDate = new Date();
 
-    var daysOfWeek = ["Sun", "Mon", "Tues", "Wednes", "Thurs", "Fri", "Sat"];
+    var daysOfWeek = ["Sun", "Mon", "Tues", "Wednes", "Thurs", "Fri", "Satur"];
     var dayOfWeek = showDate.getDay();
     var formattedDay = daysOfWeek[dayOfWeek];
 
@@ -33,7 +33,7 @@ window.onload = showTxtClock;
 //move & style time
 function styleClock() {
     var txtClock = document.getElementById("txtClock");
-    txtClock.style.backgroundImage= "radial-gradient(circle at 80% 70%, red 1%, transparent 10%), " + "radial-gradient(circle at 90% 20%, lightblue 1%, transparent 10%), " + "radial-gradient(circle at 20% 40%, green 1%, transparent 20%)";
+    txtClock.style.backgroundImage= "radial-gradient(circle at 80% 70%, red 1%, transparent 10%), " + "radial-gradient(circle at 90% 20%, lightblue 1%, transparent 10%), " + "radial-gradient(circle at 20% 40%, green 1%, transparent 20%), " + "radial-gradient(circle at 50% 70%, blue 1%, transparent 30%)";
     txtClock.style.right = "0";
     txtClock.style.left = "0";
     txtClock.style.margin = "0 auto";
