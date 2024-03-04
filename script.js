@@ -33,7 +33,7 @@ window.onload = showTxtClock;
 //move & style time
 function styleClock() {
     var txtClock = document.getElementById("txtClock");
-    txtClock.style.backgroundImage= "radial-gradient(circle at 80% 70%, red 1%, transparent 10%), " + "radial-gradient(circle at 90% 20%, lightblue 1%, transparent 10%), " + "radial-gradient(circle at 20% 40%, green 1%, transparent 20%), " + "radial-gradient(circle at 50% 70%, blue 1%, transparent 30%)";
+    txtClock.style.backgroundImage= "radial-gradient(circle at 80% 70%, red 1%, transparent 10%), " + "radial-gradient(circle at 90% 20%, yellow 1%, transparent 10%), " + "radial-gradient(circle at 20% 40%, green 1%, transparent 20%), " + "radial-gradient(circle at 50% 70%, blue 1%, transparent 30%)";
     txtClock.style.right = "0";
     txtClock.style.left = "0";
     txtClock.style.margin = "0 auto";
@@ -41,7 +41,7 @@ function styleClock() {
     txtClock.style.width = "90%";
     txtClock.style.height = "60%";
     txtClock.style.borderRadius = "20px";
-    txtClock.style.border = "10px double yellow";
+    txtClock.style.border = "10px double silver";
     txtClock.style.fontSize = "10vw";
     txtClock.style.fontFamily = "Arial, sans-serif";
     txtClock.style.textAlign = "center";
