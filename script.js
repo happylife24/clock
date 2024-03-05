@@ -1,6 +1,6 @@
 //background color
 function changeBackgroundColor() {
-    document.body.style.backgroundColor = "black";
+    document.body.style.background = "linear-gradient(to right, purple, black, purple)";
 } 
 changeBackgroundColor();
 
@@ -37,14 +37,14 @@ function styleClock() {
     txtClock.style.right = "0";
     txtClock.style.left = "0";
     txtClock.style.margin = "0 auto";
-    txtClock.style.top = "5%";
-    txtClock.style.width = "90%";
+    txtClock.style.top = "13%";
+    txtClock.style.width = "60%";
     txtClock.style.height = "60%";
-    txtClock.style.borderRadius = "20px";
-    txtClock.style.border = "10px double silver";
+    txtClock.style.borderRadius = "30px";
     txtClock.style.fontSize = "10vw";
     txtClock.style.fontFamily = "Arial, sans-serif";
     txtClock.style.textAlign = "center";
+    txtClock.style.backgroundColor = "purple";
     txtClock.style.color = "white";
     txtClock.style.paddingTop = "3%";
 }
