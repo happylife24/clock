@@ -3,21 +3,4 @@
 }
 
 
-/*  Android mobile  */
-@media only screen and (max-width: 600px) {
-    #txtClock {
-        width: auto;
-        height: auto;
-        font-family: 'Times New Roman', Times, serif;
-    }
-}
 
-
-/*  Iphone mobile  */
-@media only screen and (max-width: 414px) {
-    #txtClock {
-        width: auto;
-        height: auto;
-        font-family: 'Times New Roman', Times, serif;
-    }
-}

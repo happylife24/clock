@@ -52,6 +52,23 @@ styleClock();
 
 
 
+function mediaQuery() {
+  var txtClock = document.getElementById("txtClock");
+
+  if (window.matchMedia("(max-width: 414px)").matches) {
+    document.getElementById("txtClock");
+    txtClock.style.width = "80%";
+    txtClock.style.height = "auto";
+  }    
+}
+
+mediaQuery();
+
+window.addEventListener('resize', mediaQuery);
+
+
+
+
 
     
 
