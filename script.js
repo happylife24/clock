@@ -14,12 +14,35 @@ function showTxtClock() {
     var dayOfWeek = showDate.getDay();
     var formattedDay = daysOfWeek[dayOfWeek];
 
-    var formattedTime = showDate.toLocaleTimeString([], {
-        hour: '2-digit',
-        minute:'2-digit',  
-        second: '2-digit', 
-        hour12: true
-    });
+    var hours = showDate.getHours();
+    var minutes = showDate.getMinutes();
+    var seconds = showDate.getSeconds();
+
+    if (hours < 10) {
+      hours = "0" + hours;
+    }
+    if (minutes < 10) {
+      minutes = "0" + minutes;
+    }
+    if (seconds < 10) {
+      seconds = "0" + seconds;
+    }
+
+    if (hours == 0) {
+        hours12 = true;
+        hours = 12;
+        amPm = "AM";
+    } else if (hours < 12) {
+        hours12 = true;
+        amPm = "AM";
+    } else if (hours == 12) {
+        amPm = "PM";
+    } else {
+        hours = hours - 12;
+        amPm = "PM";
+    }
+
+    var formattedTime = hours + " :" + " " + minutes + " :" + " " + seconds + " " + amPm;
 
     document.getElementById("txtClock").innerHTML = formattedTime + " " + formattedDay + "day ";
     
@@ -38,7 +61,7 @@ function styleClock() {
     txtClock.style.left = "0";
     txtClock.style.margin = "0 auto";
     txtClock.style.top = "13%";
-    txtClock.style.width = "60%";
+    txtClock.style.width = "70%";
     txtClock.style.height = "60%";
     txtClock.style.borderRadius = "30px";
     txtClock.style.fontSize = "10vw";
@@ -48,10 +71,12 @@ function styleClock() {
     txtClock.style.color = "white";
     txtClock.style.paddingTop = "3%";
 }
+
 styleClock();
 
 
 
+//media query
 function mediaQuery() {
   var txtClock = document.getElementById("txtClock");
 
@@ -61,9 +86,7 @@ function mediaQuery() {
     txtClock.style.height = "auto";
   }    
 }
-
 mediaQuery();
-
 window.addEventListener('resize', mediaQuery);
 
 
