@@ -82,8 +82,12 @@ function mediaQuery() {
 
   if (window.matchMedia("(max-width: 414px)").matches) {
     document.getElementById("txtClock");
-    txtClock.style.width = "80%";
+    txtClock.style.width = "95%";
     txtClock.style.height = "auto";
+    txtClock.style.top = "160px";
+    txtClock.style.paddingTop = "30px";
+    txtClock.style.paddingBottom = "30px";
+    txtClock.style.fontSize = "15vw";
   }    
 }
 mediaQuery();
