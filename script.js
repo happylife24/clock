@@ -48,7 +48,6 @@ function showTxtClock() {
     
     setTimeout(showTxtClock, 1000);
 }  
-
 window.onload = showTxtClock;
 
 
@@ -71,7 +70,6 @@ function styleClock() {
     txtClock.style.color = "white";
     txtClock.style.paddingTop = "3%";
 }
-
 styleClock();
 
 
