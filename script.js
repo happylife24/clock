@@ -76,7 +76,7 @@ styleClock();
 
 
 
-//media query
+//media query for mobile
 function mediaQuery() {
   var txtClock = document.getElementById("txtClock");
 
