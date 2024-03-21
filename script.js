@@ -1,4 +1,4 @@
-//background color
+// background color
 function changeBackgroundColor() {
     document.body.style.background = "linear-gradient(to right, purple, black, purple)";
 } 
@@ -6,7 +6,12 @@ changeBackgroundColor();
 
 
 
-//time
+// define amPm as variable
+var amPm;
+
+
+
+// time
 function showTxtClock() {
     var showDate = new Date();
 
@@ -48,11 +53,11 @@ function showTxtClock() {
     
     setTimeout(showTxtClock, 1000);
 }  
-window.onload = showTxtClock;
+window.onload = showTxtClock();
 
 
 
-//move & style time
+// move & style time
 function styleClock() {
     var txtClock = document.getElementById("txtClock");
     txtClock.style.backgroundImage= "radial-gradient(circle at 80% 70%, red 1%, transparent 10%), " + "radial-gradient(circle at 90% 20%, yellow 1%, transparent 10%), " + "radial-gradient(circle at 20% 20%, green 1%, transparent 20%), " + "radial-gradient(circle at 50% 70%, blue 1%, transparent 30%), " + "radial-gradient(circle at 10% 80%, pink 0.1%, transparent 15%)";
@@ -70,17 +75,17 @@ function styleClock() {
     txtClock.style.backgroundColor = "purple";
     txtClock.style.color = "white";
 
-    // resize ampm 
+// resize ampm 
     var ampmSpan = document.createElement("span");
     ampmSpan.textContent = amPm;
-    ampmSpan.style.fontSize = "0.5vw";
+    ampmSpan.style.fontSize = "10px";
     txtClock.appendChild(ampmSpan);
 }
 styleClock();
 
 
 
-//media query for mobile
+// media query for mobile
 function mediaQuery() {
   var txtClock = document.getElementById("txtClock");
 
