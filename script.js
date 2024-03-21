@@ -69,6 +69,12 @@ function styleClock() {
     txtClock.style.textAlign = "center";
     txtClock.style.backgroundColor = "purple";
     txtClock.style.color = "white";
+
+    // resize ampm 
+    var ampmSpan = document.createElement("span");
+    ampmSpan.textContent = amPm;
+    ampmSpan.style.fontSize = "0.5vw";
+    txtClock.appendChild(ampmSpan);
 }
 styleClock();
 
