@@ -47,17 +47,17 @@ function showTxtClock() {
         amPm = "PM";
     }
 
-    var formattedTime = hours + " :" + " " + minutes + " :" + " " + seconds;
+    var formattedTime = hours + " :" + " " + minutes + " :" + " " + seconds + " ";
 
     document.getElementById("txtClock").innerHTML = formattedTime;
 
-    // resize ampm 
+// resize amPm 
     var ampmSpan = document.createElement("span");
     ampmSpan.textContent = amPm;
-    ampmSpan.style.fontSize = "0.8em";
+    ampmSpan.style.fontSize = "0.5em";
     txtClock.appendChild(ampmSpan);
 
-    // Add day of week
+// Add days of week
     var daySpan = document.createElement("span");
     daySpan.textContent = " " + formattedDay + "day";
     document.getElementById("txtClock").appendChild(daySpan);
