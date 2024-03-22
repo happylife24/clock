@@ -11,6 +11,6 @@ Languages:
 <li>JavaScript</li>
 <li>CSS</li>
 <li>HTML</li>
-<li>Media Query by JavaScript</li>
+<li>used JavaScript Media Query</li>
 <br>
 <br>
