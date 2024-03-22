@@ -47,9 +47,20 @@ function showTxtClock() {
         amPm = "PM";
     }
 
-    var formattedTime = hours + " :" + " " + minutes + " :" + " " + seconds + " " + amPm;
+    var formattedTime = hours + " :" + " " + minutes + " :" + " " + seconds;
 
-    document.getElementById("txtClock").innerHTML = formattedTime + " " + formattedDay + "day ";
+    document.getElementById("txtClock").innerHTML = formattedTime;
+
+    // resize ampm 
+    var ampmSpan = document.createElement("span");
+    ampmSpan.textContent = amPm;
+    ampmSpan.style.fontSize = "0.8em";
+    txtClock.appendChild(ampmSpan);
+
+    // Add day of week
+    var daySpan = document.createElement("span");
+    daySpan.textContent = " " + formattedDay + "day";
+    document.getElementById("txtClock").appendChild(daySpan);
     
     setTimeout(showTxtClock, 1000);
 }  
@@ -74,12 +85,6 @@ function styleClock() {
     txtClock.style.textAlign = "center";
     txtClock.style.backgroundColor = "purple";
     txtClock.style.color = "white";
-
-// resize ampm 
-    var ampmSpan = document.createElement("span");
-    ampmSpan.textContent = amPm;
-    ampmSpan.style.fontSize = "10px";
-    txtClock.appendChild(ampmSpan);
 }
 styleClock();
 
