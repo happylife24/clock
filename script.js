@@ -109,6 +109,29 @@ window.addEventListener('resize', mediaQuery);
 
 
 
+function moveAnalog() {
+  const hourAnalog = document.getElementById("hour");
+  const minuteAnalog = document.getElementById("minute");
+  const secondAnalog = document.getElementById("second");
+
+  setInterval(() => {
+    const now = new Date();
+    const hours = now.getHours() % 12; // 12-hour format
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+
+    const hourDeg = (hours * 30) + (0.5 * minutes); // 1 hour = 30 degrees, 1 minute = 0.5 degree
+    const minuteDeg = (minutes * 6) + (0.1 * seconds); // 1 minute = 6 degrees, 1 second = 0.1 degree
+    const secondDeg = seconds * 6; // 1 second = 6 degrees
+
+    hourAnalog.style.transform = `rotate(${hourDeg}deg)`;
+    minuteAnalog.style.transform = `rotate(${minuteDeg}deg)`;
+    secondAnalog.style.transform = `rotate(${secondDeg}deg)`;
+  }, 1000);
+}
+moveAnalog();
+
+
 
 
     
