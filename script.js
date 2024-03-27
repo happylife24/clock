@@ -74,11 +74,11 @@ function styleClock() {
     txtClock.style.backgroundImage= "radial-gradient(circle at 80% 70%, red 1%, transparent 10%), " + "radial-gradient(circle at 90% 20%, yellow 1%, transparent 10%), " + "radial-gradient(circle at 20% 20%, green 1%, transparent 20%), " + "radial-gradient(circle at 50% 70%, blue 1%, transparent 30%), " + "radial-gradient(circle at 10% 80%, pink 0.1%, transparent 15%)";
     txtClock.style.right = "0";
     txtClock.style.left = "0";
-    txtClock.style.top = "5%";
-    txtClock.style.paddingTop = "19%";
+    txtClock.style.top = "12%";
+    txtClock.style.paddingTop = "13%";
     txtClock.style.margin = "0 auto";
     txtClock.style.width = "70%";
-    txtClock.style.height = "60%";
+    txtClock.style.height = "50%";
     txtClock.style.borderRadius = "30px";
     txtClock.style.fontSize = "10vw";
     txtClock.style.fontFamily = "Arial, sans-serif";
@@ -121,8 +121,8 @@ function moveAnalog() {
     const minutes = now.getMinutes();
     const seconds = now.getSeconds();
 
-    const hourDeg = (hours * 30) + (0.5 * minutes); // 1 hour = 30 degrees, 1 minute = 0.5 degree
-    const minuteDeg = (minutes * 6) + (0.1 * seconds); // 1 minute = 6 degrees, 1 second = 0.1 degree
+    const hourDeg = (hours * 11) + (0.5 * minutes); // 1 hour = 30 degrees, 1 minute = 0.5 degree
+    const minuteDeg = (minutes * 7) + (0.1 * seconds); // 1 minute = 6 degrees, 1 second = 0.1 degree
     const secondDeg = seconds * 6; // 1 second = 6 degrees
 
     hourAnalog.style.transform = `rotate(${hourDeg}deg)`;
@@ -137,9 +137,17 @@ moveAnalog();
 // style
 function styleAnalog() {
   var analogClock = document.getElementById("analogClock");
-  analogClock.style.marginLeft = "45%";
+  analogClock.style.marginLeft = "43%";
+  analogClock.style.marginTop = "7%";
+  var analog = document.getElementsByClassName("analog");
+  for (var i = 0; i < analog.length; i++) {
+    analog[i].style.marginLeft = "50%";
+    analog[i].style.marginTop = "15%";
+  }
 }
 styleAnalog();
+
+
 
 
 
