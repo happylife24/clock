@@ -1,8 +1,12 @@
+<!-- text clock -->
+
 #txtClock {
     position: absolute;
 }
 
 
+
+<!-- analog clcok -->
 
 #analogClock {
     width: 200px;
