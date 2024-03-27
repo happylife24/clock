@@ -74,8 +74,8 @@ function styleClock() {
     txtClock.style.backgroundImage= "radial-gradient(circle at 80% 70%, red 1%, transparent 10%), " + "radial-gradient(circle at 90% 20%, yellow 1%, transparent 10%), " + "radial-gradient(circle at 20% 20%, green 1%, transparent 20%), " + "radial-gradient(circle at 50% 70%, blue 1%, transparent 30%), " + "radial-gradient(circle at 10% 80%, pink 0.1%, transparent 15%)";
     txtClock.style.right = "0";
     txtClock.style.left = "0";
-    txtClock.style.top = "13%";
-    txtClock.style.paddingTop = "3%";
+    txtClock.style.top = "5%";
+    txtClock.style.paddingTop = "19%";
     txtClock.style.margin = "0 auto";
     txtClock.style.width = "70%";
     txtClock.style.height = "60%";
@@ -109,6 +109,7 @@ window.addEventListener('resize', mediaQuery);
 
 
 
+// analog clock
 function moveAnalog() {
   const hourAnalog = document.getElementById("hour");
   const minuteAnalog = document.getElementById("minute");
@@ -130,6 +131,15 @@ function moveAnalog() {
   }, 1000);
 }
 moveAnalog();
+
+
+
+// style
+function styleAnalog() {
+  var analogClock = document.getElementById("analogClock");
+  analogClock.style.marginLeft = "45%";
+}
+styleAnalog();
 
 
 
