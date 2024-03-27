@@ -1,5 +1,4 @@
 <!-- text clock -->
-
 #txtClock {
     position: absolute;
 }
@@ -7,7 +6,6 @@
 
 
 <!-- analog clcok -->
-
 #analogClock {
     width: 200px;
     height: 200px;
@@ -15,19 +13,23 @@
     border-radius: 50%;
     position: relative;
   }
+
   .analog {
     position: absolute;
     background: #333;
     transform-origin: center;
   }
+
   #hour {
     width: 6px;
     height: 50px;
   }
+
   #minute {
     width: 4px;
     height: 80px;
   }
+
   #second {
     width: 2px;
     height: 100px;
