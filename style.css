@@ -1,11 +1,11 @@
-<!-- text clock -->
+/* text clock */
 #txtClock {
     position: absolute;
 }
 
 
 
-<!-- analog clock -->
+/* analog clock */
 #analogClock {
     width: 200px;
     height: 200px;
