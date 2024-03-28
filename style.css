@@ -17,21 +17,23 @@
   .analog {
     position: absolute;
     background: #f3efef;
-    transform-origin: center;
+    transform-origin: center top;
   }
 
   #hour {
-    width: 4px;
-    height: 45px;
+    width: 5px;
+    height: 35px;
+    background: yellow;
   }
 
   #minute {
     width: 5px;
-    height: 65px;
+    height: 40px;
+    background: green;
   }
 
   #second {
     width: 2px;
-    height: 77px;
+    height: 46px;
     background: red;
   }
