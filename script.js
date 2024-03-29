@@ -11,7 +11,7 @@ var amPm;
 
 
 
-// time
+// time & day of the week
 function showTxtClock() {
     var showDate = new Date();
 
@@ -57,7 +57,7 @@ function showTxtClock() {
     ampmSpan.style.fontSize = "0.5em";
     txtClock.appendChild(ampmSpan);
 
-// Add days of week
+// add day of the week
     var daySpan = document.createElement("span");
     daySpan.textContent = " " + formattedDay + "day";
     document.getElementById("txtClock").appendChild(daySpan);
@@ -90,25 +90,6 @@ styleClock();
 
 
 
-// media query for mobile
-function mediaQuery() {
-  var txtClock = document.getElementById("txtClock");
-
-  if (window.matchMedia("(max-width: 414px)").matches) {
-    document.getElementById("txtClock");
-    txtClock.style.width = "95%";
-    txtClock.style.height = "auto";
-    txtClock.style.top = "160px";
-    txtClock.style.paddingTop = "30px";
-    txtClock.style.paddingBottom = "30px";
-    txtClock.style.fontSize = "15vw";
-  }    
-}
-mediaQuery();
-window.addEventListener('resize', mediaQuery);
-
-
-
 // analog clock
 function moveAnalog() {
   const hourAnalog = document.getElementById("hour");
@@ -134,7 +115,7 @@ moveAnalog();
 
 
 
-// style
+// style analog clock
 function styleAnalog() {
   var analogClock = document.getElementById("analogClock");
   analogClock.style.marginLeft = "42.9%";
@@ -146,6 +127,26 @@ function styleAnalog() {
   }
 }
 styleAnalog();
+
+
+
+// media query for mobile
+function mediaQuery() {
+  var txtClock = document.getElementById("txtClock");
+
+  if (window.matchMedia("(max-width: 414px)").matches) {
+    document.getElementById("txtClock");
+    txtClock.style.width = "95%";
+    txtClock.style.height = "auto";
+    txtClock.style.top = "160px";
+    txtClock.style.paddingTop = "30px";
+    txtClock.style.paddingBottom = "30px";
+    txtClock.style.fontSize = "15vw";
+  }    
+}
+mediaQuery();
+window.addEventListener('resize', mediaQuery);
+
 
 
 
