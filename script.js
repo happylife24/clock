@@ -121,9 +121,9 @@ function moveAnalog() {
     const minutes = now.getMinutes();
     const seconds = now.getSeconds();
 
-    const hourDeg = (hours * 120) + (0.5 * minutes); // 1 hour = 30 degrees, 1 minute = 0.5 degree
-    const minuteDeg = (minutes * 16.5) + (0.1 * seconds); // 1 minute = 6 degrees, 1 second = 0.1 degree
-    const secondDeg = seconds * 10; // 1 second = 6 degrees
+    const hourDeg = (hours * 30) + (0.5 * minutes); // 1 hour = 30 degrees, 1 minute = 0.5 degree
+    const minuteDeg = (minutes * 6) + (0.1 * seconds); // 1 minute = 6 degrees, 1 second = 0.1 degree
+    const secondDeg = seconds * 6; // 1 second = 6 degrees
 
     hourAnalog.style.transform = `rotate(${hourDeg}deg)`;
     minuteAnalog.style.transform = `rotate(${minuteDeg}deg)`;
@@ -142,7 +142,7 @@ function styleAnalog() {
   var analog = document.getElementsByClassName("analog");
   for (var i = 0; i < analog.length; i++) {
     analog[i].style.marginLeft = "47%";
-    analog[i].style.marginTop = "55%";
+    analog[i].style.marginTop = "12%";
   }
 }
 styleAnalog();
