@@ -74,11 +74,11 @@ function styleClock() {
     txtClock.style.backgroundImage= "radial-gradient(circle at 80% 70%, red 1%, transparent 10%), " + "radial-gradient(circle at 90% 20%, yellow 1%, transparent 10%), " + "radial-gradient(circle at 20% 20%, green 1%, transparent 20%), " + "radial-gradient(circle at 50% 70%, blue 1%, transparent 30%), " + "radial-gradient(circle at 10% 80%, pink 0.1%, transparent 15%)";
     txtClock.style.right = "0";
     txtClock.style.left = "0";
-    txtClock.style.top = "12%";
+    txtClock.style.top = "6%";
     txtClock.style.paddingTop = "13%";
     txtClock.style.margin = "0 auto";
     txtClock.style.width = "70%";
-    txtClock.style.height = "50%";
+    txtClock.style.height = "55%";
     txtClock.style.borderRadius = "30px";
     txtClock.style.fontSize = "10vw";
     txtClock.style.fontFamily = "Arial, sans-serif";
@@ -118,11 +118,11 @@ moveAnalog();
 // style analog clock
 function styleAnalog() {
   var analogClock = document.getElementById("analogClock");
-  analogClock.style.marginLeft = "42.9%";
-  analogClock.style.marginTop = "8%";
+  analogClock.style.marginLeft = "44%";
+  analogClock.style.marginTop = "4%";
   var analog = document.getElementsByClassName("analog");
   for (var i = 0; i < analog.length; i++) {
-    analog[i].style.marginLeft = "47%";
+    analog[i].style.marginLeft = "50%";
     analog[i].style.marginTop = "12%";
   }
 }
@@ -133,16 +133,20 @@ styleAnalog();
 // media query for mobile
 function mediaQuery() {
   var txtClock = document.getElementById("txtClock");
-
   if (window.matchMedia("(max-width: 414px)").matches) {
     document.getElementById("txtClock");
     txtClock.style.width = "95%";
     txtClock.style.height = "auto";
-    txtClock.style.top = "160px";
-    txtClock.style.paddingTop = "30px";
+    txtClock.style.top = "90px";
+    txtClock.style.paddingTop = "170px";
     txtClock.style.paddingBottom = "30px";
     txtClock.style.fontSize = "15vw";
-  }    
+  }   
+  var analogClock = document.getElementById("analogClock");
+  if (window.matchMedia("(max-width: 414px)").matches) {
+  analogClock.style.marginTop = "35%";
+  analogClock.style.marginLeft = "30%";
+  }
 }
 mediaQuery();
 window.addEventListener('resize', mediaQuery);
