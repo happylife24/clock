@@ -74,7 +74,7 @@ function styleClock() {
     txtClock.style.backgroundImage= "radial-gradient(circle at 80% 70%, yellow 1%, transparent 10%), " + "radial-gradient(circle at 90% 20%, yellow 1%, transparent 10%), " + "radial-gradient(circle at 20% 20%, yellow 1%, transparent 20%), " + "radial-gradient(circle at 50% 70%, yellow 1%, transparent 30%), " + "radial-gradient(circle at 10% 80%, yellow 0.1%, transparent 15%)";
     txtClock.style.right = "0";
     txtClock.style.left = "0";
-    txtClock.style.top = "6%";
+    txtClock.style.top = "7%";
     txtClock.style.paddingTop = "13%";
     txtClock.style.margin = "0 auto";
     txtClock.style.width = "70%";
@@ -143,6 +143,7 @@ function mediaQuery() {
     txtClock.style.paddingBottom = "50px";
   } 
   // for mobile
+  var txtClock = document.getElementById("txtClock");
   if (window.matchMedia("(max-width: 414px)").matches) {
     document.getElementById("txtClock");
     txtClock.style.width = "95%";
@@ -159,6 +160,7 @@ function mediaQuery() {
   analogClock.style.marginTop = "17%";
   }
   // for mobile
+  var analogClock = document.getElementById("analogClock");
   if (window.matchMedia("(max-width: 414px)").matches) {
   analogClock.style.marginTop = "35%";
   analogClock.style.marginLeft = "30%";
