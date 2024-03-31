@@ -130,16 +130,28 @@ styleAnalog();
 
 
 
-// media query for mobile
+// media query
 function mediaQuery() {
+  
+  // for desktop
   var txtClock = document.getElementById("txtClock");
+  
+  if (window.matchMedia("(max-width: 900px)").matches) {
+    document.getElementById("txtClock");
+    txtClock.style.height = "auto";
+    txtClock.style.top = "100px";
+    txtClock.style.paddingTop = "150px";
+    txtClock.style.paddingBottom = "50px";
+  } 
+
+  // for mobile
   if (window.matchMedia("(max-width: 414px)").matches) {
     document.getElementById("txtClock");
     txtClock.style.width = "95%";
     txtClock.style.height = "auto";
-    txtClock.style.top = "90px";
-    txtClock.style.paddingTop = "170px";
-    txtClock.style.paddingBottom = "30px";
+    txtClock.style.top = "100px";
+    txtClock.style.paddingTop = "140px";
+    txtClock.style.paddingBottom = "10px";
     txtClock.style.fontSize = "15vw";
   }   
   var analogClock = document.getElementById("analogClock");
