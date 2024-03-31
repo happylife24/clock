@@ -135,7 +135,6 @@ function mediaQuery() {
   
   // for desktop
   var txtClock = document.getElementById("txtClock");
-  
   if (window.matchMedia("(max-width: 900px)").matches) {
     document.getElementById("txtClock");
     txtClock.style.height = "auto";
@@ -143,7 +142,6 @@ function mediaQuery() {
     txtClock.style.paddingTop = "150px";
     txtClock.style.paddingBottom = "50px";
   } 
-
   // for mobile
   if (window.matchMedia("(max-width: 414px)").matches) {
     document.getElementById("txtClock");
@@ -153,8 +151,14 @@ function mediaQuery() {
     txtClock.style.paddingTop = "140px";
     txtClock.style.paddingBottom = "10px";
     txtClock.style.fontSize = "15vw";
-  }   
+  } 
+  
+  // for desktop
   var analogClock = document.getElementById("analogClock");
+  if (window.matchMedia("(max-width: 900px").matches) {
+  analogClock.style.marginTop = "17%";
+  }
+  // for mobile
   if (window.matchMedia("(max-width: 414px)").matches) {
   analogClock.style.marginTop = "35%";
   analogClock.style.marginLeft = "30%";
