@@ -71,7 +71,7 @@ window.onload = showTxtClock();
 // move & style time
 function styleClock() {
     var txtClock = document.getElementById("txtClock");
-    txtClock.style.backgroundImage= "radial-gradient(circle at 80% 70%, yellow 1%, transparent 10%), " + "radial-gradient(circle at 90% 20%, yellow 1%, transparent 10%), " + "radial-gradient(circle at 20% 20%, yellow 1%, transparent 20%), " + "radial-gradient(circle at 50% 70%, yellow 1%, transparent 30%), " + "radial-gradient(circle at 10% 80%, yellow 0.1%, transparent 15%)";
+    txtClock.style.backgroundImage= "radial-gradient(circle at 80% 70%, green 5%, transparent 70%), " + "radial-gradient(circle at 90% 20%, blue 5%, transparent 50%), " + "radial-gradient(circle at 20% 20%, yellow 5%, transparent 50%), " + "radial-gradient(circle at 10% 80%, red 5%, transparent 100%)";
     txtClock.style.right = "0";
     txtClock.style.left = "0";
     txtClock.style.top = "5%";
