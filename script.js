@@ -74,8 +74,8 @@ function styleClock() {
     txtClock.style.backgroundImage= "radial-gradient(circle at 80% 70%, yellow 1%, transparent 10%), " + "radial-gradient(circle at 90% 20%, yellow 1%, transparent 10%), " + "radial-gradient(circle at 20% 20%, yellow 1%, transparent 20%), " + "radial-gradient(circle at 50% 70%, yellow 1%, transparent 30%), " + "radial-gradient(circle at 10% 80%, yellow 0.1%, transparent 15%)";
     txtClock.style.right = "0";
     txtClock.style.left = "0";
-    txtClock.style.top = "7%";
-    txtClock.style.paddingTop = "13%";
+    txtClock.style.top = "5%";
+    txtClock.style.paddingTop = "15%";
     txtClock.style.margin = "0 auto";
     txtClock.style.width = "70%";
     txtClock.style.height = "55%";
@@ -135,14 +135,14 @@ function mediaQueryOne() {
   var txtClock = document.getElementById("txtClock");
   if (window.matchMedia("(max-width: 900px)").matches) {
     txtClock.style.height = "auto";
-    txtClock.style.top = "60px";
-    txtClock.style.paddingTop = "200px";
-    txtClock.style.paddingBottom = "10px";
+    txtClock.style.top = "45px";
+    txtClock.style.paddingTop = "240px";
+    txtClock.style.paddingBottom = "15px";
     txtClock.style.margin = "0 auto";
   }
   var analogClock = document.getElementById("analogClock");
   if (window.matchMedia("(max-width: 900px)").matches) {
-    analogClock.style.marginTop = "9%";
+    analogClock.style.marginTop = "11%";
   } 
 }
 mediaQueryOne();
@@ -154,8 +154,8 @@ function mediaQueryTwo() {
   if (window.matchMedia("(max-width: 600px)").matches) {
     txtClock.style.height = "auto";
     txtClock.style.top = "60px";
-    txtClock.style.paddingTop = "200px";
-    txtClock.style.paddingBottom = "10px";
+    txtClock.style.paddingTop = "220px";
+    txtClock.style.paddingBottom = "20px";
     txtClock.style.margin = "0 auto";
   }
   var analogClock = document.getElementById("analogClock");
@@ -175,7 +175,7 @@ function mediaQueryMobile() {
     txtClock.style.width = "95%";
     txtClock.style.height = "auto";
     txtClock.style.top = "80px";
-    txtClock.style.paddingTop = "20v0px";
+    txtClock.style.paddingTop = "200px";
     txtClock.style.paddingBottom = "30px";
     txtClock.style.margin = "0 auto";
     txtClock.style.fontSize = "15vw";
