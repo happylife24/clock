@@ -122,8 +122,8 @@ function styleAnalog() {
   analogClock.style.marginTop = "4%";
   var analog = document.getElementsByClassName("analog");
   for (var i = 0; i < analog.length; i++) {
-    analog[i].style.marginLeft = "50%";
-    analog[i].style.marginTop = "15%";
+    analog[i].style.marginLeft = "46%";
+    analog[i].style.marginTop = "14%";
   }
 }
 styleAnalog();
