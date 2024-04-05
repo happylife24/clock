@@ -131,46 +131,32 @@ styleAnalog();
 
 
 // media query for desktop
-function mediaQueryOne() {
+function controlResponsive() {
   var txtClock = document.getElementById("txtClock");
+  var analogClock = document.getElementById("analogClock");
+
   if (window.matchMedia("(max-width: 900px)").matches) {
     txtClock.style.height = "auto";
     txtClock.style.top = "45px";
     txtClock.style.paddingTop = "240px";
     txtClock.style.paddingBottom = "15px";
     txtClock.style.margin = "0 auto";
-  }
-  var analogClock = document.getElementById("analogClock");
-  if (window.matchMedia("(max-width: 900px)").matches) {
+
     analogClock.style.marginTop = "11%";
+    analogClock.style.marginLeft= "initial"
   } 
-}
-mediaQueryOne();
 
-
-
-function mediaQueryTwo() {
-  var txtClock = document.getElementById("txtClock");
   if (window.matchMedia("(max-width: 600px)").matches) {
     txtClock.style.height = "auto";
     txtClock.style.top = "60px";
     txtClock.style.paddingTop = "220px";
     txtClock.style.paddingBottom = "20px";
     txtClock.style.margin = "0 auto";
-  }
-  var analogClock = document.getElementById("analogClock");
-  if (window.matchMedia("(max-width: 600px)").matches) {
+
     analogClock.style.marginTop = "17%";
     analogClock.style.marginLeft = "40%";
   } 
-}
-mediaQueryTwo();
 
-
-
-// media query for Mobile
-function mediaQueryMobile() {
-  var txtClock = document.getElementById("txtClock");
   if (window.matchMedia("(max-width: 414px)").matches) {
     txtClock.style.width = "95%";
     txtClock.style.height = "auto";
@@ -179,14 +165,13 @@ function mediaQueryMobile() {
     txtClock.style.paddingBottom = "30px";
     txtClock.style.margin = "0 auto";
     txtClock.style.fontSize = "15vw";
-  }
-  var analogClock = document.getElementById("analogClock");
-  if (window.matchMedia("(max-width: 414px)").matches) {
+
     analogClock.style.marginTop = "35%";
     analogClock.style.marginLeft = "30%";
   } 
 }
-mediaQueryMobile();
+window.addEventListener('load', handleResponsive);
+window.addEventListener('resize',handleResponsive);
 
 
 
