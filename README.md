@@ -8,7 +8,7 @@ This is a clock.
 <br>
 Also, this is a responsive website for mobile and desktop.
 <br>
-I used JavaScript Media Query to make the browser's width size adjust smoothly.
+I used JavaScript Media Query to make the size adjust smoothly based on the browser's width.
 <br>
 <br>
 Languages:
