@@ -19,7 +19,8 @@ Languages:
 <br>
 <br>
 Screenshot for desktop:
-<img src="https://github.com/happylife24/clock/assets/124482174/d0b3c346-2dc9-42bf-bd65-ea09c15c0152">
+<br>
+<img width="400px" src="https://github.com/happylife24/clock/assets/124482174/d0b3c346-2dc9-42bf-bd65-ea09c15c0152">
 <br>
 <br>
 
