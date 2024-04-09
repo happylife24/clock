@@ -72,19 +72,20 @@ window.onload = showTxtClock();
 function styleClock() {
     var txtClock = document.getElementById("txtClock");
     txtClock.style.backgroundImage= "radial-gradient(circle at 80% 70%, green 5%, transparent 70%), " + "radial-gradient(circle at 90% 20%, blue 5%, transparent 50%), " + "radial-gradient(circle at 20% 20%, yellow 5%, transparent 50%), " + "radial-gradient(circle at 10% 80%, red 5%, transparent 100%)";
+    txtClock.style.borderRadius = "30px";
+    txtClock.style.backgroundColor = "purple";
+    txtClock.style.color = "white";
+    txtClock.style.fontSize = "8vw";
+    txtClock.style.fontFamily = "Arial, sans-serif";
     txtClock.style.right = "0";
     txtClock.style.left = "0";
     txtClock.style.top = "5%";
-    txtClock.style.paddingTop = "15%";
+    txtClock.style.paddingTop = "17%";
+    txtClock.style.paddingBottom = "2%";
     txtClock.style.margin = "0 auto";
     txtClock.style.width = "70%";
-    txtClock.style.height = "55%";
-    txtClock.style.borderRadius = "30px";
-    txtClock.style.fontSize = "10vw";
-    txtClock.style.fontFamily = "Arial, sans-serif";
+    txtClock.style.height = "auto";
     txtClock.style.textAlign = "center";
-    txtClock.style.backgroundColor = "purple";
-    txtClock.style.color = "white";
 }
 styleClock();
 
@@ -137,27 +138,27 @@ function controlResponsive() {
 
   if (window.matchMedia("(max-width: 900px)").matches) {
     txtClock.style.height = "auto";
-    txtClock.style.top = "85px";
-    txtClock.style.paddingTop = "280px";
-    txtClock.style.paddingBottom = "105px";
+    txtClock.style.top = "5%";
+    txtClock.style.paddingTop = "27%";
+    txtClock.style.paddingBottom = "2%";
     txtClock.style.margin = "0 auto";
 
     analogClock.style.margin = "0 auto";
 
     var windowHeight = window.innerHeight;
-    var marginTopPercent = windowHeight * 0.25;
+    var marginTopPercent = windowHeight * 0.08;
     analogClock.style.marginTop = marginTopPercent + "px";
   } 
 
   if (window.matchMedia("(max-width: 600px)").matches) {
     txtClock.style.height = "auto";
-    txtClock.style.top = "60px";
-    txtClock.style.paddingTop = "290px";
-    txtClock.style.paddingBottom = "20px";
+    txtClock.style.top = "5%";
+    txtClock.style.paddingTop = "38%";
+    txtClock.style.paddingBottom = "2%";
     txtClock.style.margin = "0 auto";
 
     var windowHeight = window.innerHeight;
-    var marginTopPercent = windowHeight * 0.2;
+    var marginTopPercent = windowHeight * 0.08;
     analogClock.style.marginTop = marginTopPercent + "px";
   } 
 
