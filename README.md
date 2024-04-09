@@ -20,3 +20,5 @@ Languages:
 <li>used JavaScript Media Query</li>
 <br>
 <br>
+![clock](https://github.com/happylife24/clock/assets/124482174/e6036692-3794-4cbd-85e9-9668f2f84310)
+
