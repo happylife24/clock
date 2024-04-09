@@ -8,6 +8,8 @@ This is a clock.
 <br>
 Also, this is a responsive website for mobile and desktop.
 <br>
+I used JavaScript Media Query to make the browser's width size adjust smoothly.
+<br>
 <br>
 Languages:
 <li>JavaScript</li>
