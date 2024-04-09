@@ -20,6 +20,7 @@ Languages:
 <li>used JavaScript Media Query</li>
 <br>
 <br>
+Screenshots for desktop:
 <img src="https://github.com/happylife24/clock/assets/124482174/d0b3c346-2dc9-42bf-bd65-ea09c15c0152">
 
 
