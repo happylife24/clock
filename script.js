@@ -161,6 +161,20 @@ function controlResponsive() {
     analogClock.style.marginTop = marginTopPercent + "px";
   } 
 
+  if (window.matchMedia("(max-device-width: 480px) and (orientation: landscape)").matches) {
+    txtClock.style.width = "60%";
+    txtClock.style.height = "auto";
+    txtClock.style.top = "10px";
+    txtClock.style.paddingTop = "170px";
+    txtClock.style.paddingBottom = "30px";
+    txtClock.style.margin = "0 auto";
+    txtClock.style.fontSize = "10vw";
+
+    var windowHeight = window.innerHeight;
+    var marginTopPercent = windowHeight * 0.09;
+    analogClock.style.marginTop = marginTopPercent + "px";
+  }
+
   if (window.matchMedia("(max-width: 414px)").matches) {
     txtClock.style.width = "95%";
     txtClock.style.height = "auto";
