@@ -1,10 +1,12 @@
-# Clock App
+# Clock 
 
 
-Link: https://happylife24.github.io/clock-app/
+Link: https://happylife24.github.io/clock/
 <br>
 <br>
-This is a clock app.    Also, this is a responsive website for mobile and desktop.
+This is a clock.
+<br>
+Also, this is a responsive website for mobile and desktop.
 <br>
 <br>
 Languages:
