@@ -13,9 +13,9 @@ I used JavaScript Media Query to make the size adjust smoothly based on the brow
 <br>
 Languages:
 <li>JavaScript</li>
+<li>used JavaScript Media Query</li>
 <li>CSS</li>
 <li>HTML</li>
-<li>used JavaScript Media Query</li>
 <br>
 Screenshot for desktop responsive website:
 <br>
